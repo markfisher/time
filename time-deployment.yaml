@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: time
+spec:
+  replicas: 3
+  template:
+    metadata:
+      name: time
+      labels:
+        app: time
+    spec:
+      containers:
+      - image: markfisher/time:0.0.1
+        name: main
+

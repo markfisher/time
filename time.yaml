@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: time 
+spec:
+  containers:
+  - image: markfisher/time:0.0.1
+    name: main
+
